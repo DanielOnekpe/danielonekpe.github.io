@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;  /* Prevent scrollbars from appearing */
+    padding-top: 2px;
+}
+
+.full-screen {
+    height: 100vh;
+    /* Set height to 100% of the viewport height */
+    width: 100vw;
+    /* Set width to 100% of the viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFDF2;
+    /* Optional, for better visibility */
+}
+
+/* Navbar container */
+.navbar {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;          /* Position it at the top of the page */
+    left: 0;         /* Align it to the left of the viewport */
+    width: 100%;     /* Ensure it spans the full width of the screen */
+    background-color: #FFFDF2; /* Dark background for the navbar */
+    border-bottom: 2px solid #FFD700; /* Add a bottom border with color gold */
+    padding: 10px 20px; /* Vertical and horizontal padding for navbar */
+    z-index: 1000;   /* Ensure it stays on top of other content */
+    display: flex;
+    justify-content: space-between; /* Align the logo to the left and the links to the right */
+    align-items: center; /* Center the items vertically */
+}
+
+/* Navbar logo */
+.logo{
+    color: #000000;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Navbar logo */
+/* Styling the logo text */
+.navbar .logo a {
+    font-size: 32px;  /* Set the font size */
+    color: #000000;  /* Set the text color */
+    text-decoration: none;  /* Remove underline */
+    font-family: "Lavishly Yours", serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 1px;  /* Add some space between the letters */
+    transition: color 0.3s ease;  /* Smooth transition for hover effect */
+}
+  
+
+/* Navbar links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+  
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px 20px;
+}
+
+.aboutMe {
+    width: 50%;
+    font-size: x-large;
+    padding-right: 20px;
+}
+.stockImage{
+    width: 50%;
+}
+
+.stockImage img{
+    width: 100%;
+    height: auto;
+    max-width: 80%;  
+    border-radius: 50%;  /* Makes the image circular */
+    border: 5px solid #000000;  /* Optional: adds a border around the image */
+    transition: transform 0.3s ease-in-out; /* Optional: smooth zoom effect */
+}
+
+.stockImage img:hover {
+    transform: scale(1.1); /* Zooms in by 10% */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+
+    /* For screens smaller than 768px (tablets and smaller), make some adjustments */
+    .full-screen {
+        background-color: lightgreen;
+        /* Change background color for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* For screens smaller than 480px (phones), adjust content if needed */
+    .full-screen {
+        background-color: lightcoral;
+        /* Change background color for phones */
+    }
+}
