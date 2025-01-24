@@ -8,7 +8,6 @@ html,
 body {
     height: 100%;
     width: 100%;
-    overflow: hidden;  /* Prevent scrollbars from appearing */
     padding-top: 2px;
 }
 
@@ -82,20 +81,21 @@ body {
     transition: background-color 0.3s;
 }
 
-.content {
+.container {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 20px 20px;
+    flex-direction: column;
 }
 
 .aboutMe {
-    width: 50%;
-    font-size: x-large;
+    width: 100%;
+    font-size: large;
     padding-right: 20px;
+    text-align: center;
 }
-.stockImage{
-    width: 50%;
+
+.skills {
+    text-align: center;
 }
 
 .stockImage img{
