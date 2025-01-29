@@ -1,118 +1,155 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lavishly+Yours&display=swap" rel="stylesheet">
-    </head>
-    <!-- Home page -->
-    <!-- Short about me -->
-   <!-- Nav bar (HOME, SKILLS, EXPERIENCE, PROJECTS, CONTACT)-->
-    <div class="full-screen">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#">Daniel Onekpe</a>
-            </div>
-        
-            <ul class="nav-links">
-                <li><a href="#intro"><img src="img/home.svg" alt="Home"></a></li>
-                <li><a href="#aboutMe"><img src="img/aboutme.svg" alt="About"></a></li>
-                <li><a hreF="#skills"><img src="img/skills.svg" alt="Skills"></a></li>
-                <li><a href="#portfolio"><img src="img/portfolio.svg" alt="Portfolio"></a></li>
-                <li><a href="#contact"><img src="img/contact.svg" alt="Contact"></a></li>
-            </ul>
-        </nav>
 
-        <body>
-            <div class="container" id="container">
-            <div id="intro" class="intro">
-                <h1>Hi I'm Daniel Onekpe</h1>
-                <p>An Engineer dedicated to simplifying Complex Challenges Through Thoughtful Engineering</p>
-                <p><button>More about me</button></p>
-            </div>
-
-            <div id="aboutMe" class="aboutMe">
-                <h1>About Me</h1>
-                <p>I'm a Devops Engineer</p>
-                <p>I'm a Web Developer</p>
-
-                <p>City: Dublin</p>
-                <p>Email: onekped@gmail.com</p>
-                <p>Degree: Computer Science and Software Engineering</p>
-                <section>
-                    <p>Experience</p>
-                    <p class="place">Ericsson</p>
-                    <p class="role">Software Engineer</p>
-                    <li> Led Kubernetes cluster migration, improving cloud infrastructure resilience and scalability, ensuring high
-                        availability </li>
-                    <li> Developed and maintained microservices and cloud-based solutions, utilizing distributed systems to
-                        optimize product performance </li>    
-                    <li> Designed and built a Backstage plugin for CI/CD pipeline execution, enhancing developer experience and
-                        visibility in software deployment</li> 
-                    <li> Created an API-driven App Management Tool in Python, streamlining application onboarding, termination,
-                        and deployment processes </li> 
-                    <li> Contributed to a Java Spring Boot microservice chassis, enabling consistent architecture across multiple
-                        product areas </li> 
-                    <li> Automated security compliance through automated VA scanning in CI/CD pipelines, improving application
-                        security </li> 
-                    <li> Converted legacy shell scripts to Python, improving team efficiency in automation and deployment processes</li>
-
-                    <p class="place">Oracle</p>
-                    <p class="role">Software Engineering Intern</p>
-                    <li>Trained natural language translation models using TensorFlow, optimizing machine learning workflows for
-                        product development</li>
-                    <li>Created Python scripts and Dockerfiles for data preprocessing, model training, and deployment</li>
-                    <li>Developed documentation to improve team knowledge sharing, fostering a collaborative environment for
-                        onboarding new engineers</li>
-                </section>
-            </div>
-
-            <div id="skills" class="skills">
-                <h1>Technologies</h1>
-                <p>
-                    <li>Node.js</li><li>MongoDB</li><li>Express.js</li>
-                    <li>React.js</li><li>AngularJS</li><li>Spring Boot</li>
-                    <li>Django</li><li>Docker</li><li>Kubernetes</li>
-                    <li>Helm</li><li>Jenkins</li><li>Spinnaker</li>
-                </p>
-
-                <h1>Languages</h1>
-                <p>
-                    <li>Python</li>
-                    <li>JavaScript</li> 
-                    <li>Java</li>
-                    <li>SQL</li> 
-                    <li>bash</li>
-                </p>
-            </div>
-
-            <div id="portfolio" class="portfolio">
-                <p>Working On It</p>
-            </div>
-
-            <div id="contact" class="contact">
-                Contact me 
-                <p>LinkedIn : <a href="https://www.linkedin.com/in/daniel-onekpe-3b1545233/">On linkedin</a></p>
-                <p>Email : onekped@gmail.com</p>
-            </div>
-            </div>
-        </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <link rel="icon" href="./img/favicon.png" type="image/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lavishly+Yours&display=swap"
+        rel="stylesheet">
+</head>
+<!-- Home page -->
+<!-- Short about me -->
+<!-- Nav bar (HOME, SKILLS, EXPERIENCE, PROJECTS, CONTACT)-->
+<header>
+    <div class="logo-holder">
+        <div class="logo">Dan's Portfolio</s></div>
+        <div class="logo-text"><a href="#"></a></div>
     </div>
 
-    <!-- <div class="nav">
-        <p>HOME</p>
-        <p>SKILLS</p>
-        <p>EXPERIENCE</p>
-        <p>PROJECTS</p>
-        <p>CONTACT</p>
-    </div>
+    <nav class="navbar">
+        <ul class="nav-links" id="menu">
+            <li>
+                <a href="#intro">
+                <!-- <img src="img/home.svg" alt="Home">  -->
+                Home
+                </a>
+            </li>
+            <li>
+                <a href="#aboutMe">
+                    <!-- <img src="img/aboutme.svg" alt="About"> -->
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#skills">
+                    <!-- <img src="img/skills.svg" alt="Skills"> -->
+                    Skills
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio">
+                    <!-- <img src="img/portfolio.svg" alt="Portfolio"> -->
+                    Portfolio
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <!-- <img src="img/contact.svg" alt="Contact"> -->
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <a href="#" class="mobile_toggle" onclick="toggleMobileMenu()">
+            <img src="img/bars.svg" alt="">
+        </a>
+    </nav>
+</header>
 
-    <div class="aboutMe">
-        About me
-    </div>
+<body>
+    <div class="container" id="container">
+        <div id="intro" class="intro">
+            <h1>Hi I'm Daniel Onekpe</h1>
+            <p>An Engineer dedicated to simplifying Complex Challenges Through Thoughtful Engineering</p>
+            <p><button>More about me</button></p>
+        </div>
 
-    <div class="engineeringPictures">
-        Pictures -->
-    <!-- </div> -->
+        <div id="aboutMe" class="aboutMe">
+            <h1>About Me</h1>
+            <p>I'm a Devops Engineer</p>
+            <p>I'm a Web Developer</p>
+
+            <p>City: Dublin</p>
+            <p>Email: onekped@gmail.com</p>
+            <p>Degree: Computer Science and Software Engineering</p>
+            <section>
+                <p>Experience</p>
+                <p class="place">Ericsson</p>
+                <p class="role">Software Engineer</p>
+                <li> Led Kubernetes cluster migration, improving cloud infrastructure resilience and scalability,
+                    ensuring high
+                    availability </li>
+                <li> Developed and maintained microservices and cloud-based solutions, utilizing distributed systems to
+                    optimize product performance </li>
+                <li> Designed and built a Backstage plugin for CI/CD pipeline execution, enhancing developer experience
+                    and
+                    visibility in software deployment</li>
+                <li> Created an API-driven App Management Tool in Python, streamlining application onboarding,
+                    termination,
+                    and deployment processes </li>
+                <li> Contributed to a Java Spring Boot microservice chassis, enabling consistent architecture across
+                    multiple
+                    product areas </li>
+                <li> Automated security compliance through automated VA scanning in CI/CD pipelines, improving
+                    application
+                    security </li>
+                <li> Converted legacy shell scripts to Python, improving team efficiency in automation and deployment
+                    processes</li>
+
+                <p class="place">Oracle</p>
+                <p class="role">Software Engineering Intern</p>
+                <li>Trained natural language translation models using TensorFlow, optimizing machine learning workflows
+                    for
+                    product development</li>
+                <li>Created Python scripts and Dockerfiles for data preprocessing, model training, and deployment</li>
+                <li>Developed documentation to improve team knowledge sharing, fostering a collaborative environment for
+                    onboarding new engineers</li>
+            </section>
+        </div>
+
+        <div id="skills" class="skills">
+            <h1>Technologies</h1>
+            <p>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Express.js</li>
+                <li>React.js</li>
+                <li>AngularJS</li>
+                <li>Spring Boot</li>
+                <li>Django</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>Helm</li>
+                <li>Jenkins</li>
+                <li>Spinnaker</li>
+            </p>
+
+            <h1>Languages</h1>
+            <p>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>bash</li>
+            </p>
+        </div>
+
+        <div id="portfolio" class="portfolio">
+            <p>Working On It</p>
+        </div>
+
+        <div id="contact" class="contact">
+            Contact me
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/daniel-onekpe-3b1545233/">On linkedin</a></p>
+            <p>Email : onekped@gmail.com</p>
+        </div>
+    </div>
+</body>
+
 </html>
